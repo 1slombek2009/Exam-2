@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-modal">
+        <div class="stick"></div>
+        <h1>CRUD OPERATIONS</h1>
+        <h2>SIGN IN</h2>
+        <h4>Enter your credentials to access your account</h4>
+        <form action="index.html">
+          <label for="email"> Email </label>
+          <input
+            required
+            name="email"
+            class="input"
+            type="email"
+            placeholder="Enter your email"
+          />
+          <label for="password">Password</label>
+          <input
+            required
+            name="password"
+            class="input"
+            type="password"
+            placeholder="Enter your password"
+          />
+          <input class="submit" value="SIGN IN" name="submit" required type="submit" />
+        </form>
+      </div>
+    </div>
+    <script src="js/login.js"></script>
+  </body>
+</html>

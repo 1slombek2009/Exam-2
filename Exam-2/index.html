@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud-Operations</title>
+    <link rel="stylesheet" href="css/index.css" />
+    <style type="text/tailwindcss">
+      @layer utitles {
+        .content-auto {
+          content-visibility: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="left-nav">
+        <div class="left-nav-top">
+          <img src="images/pexels-photo-2379004 1.svg" alt="" />
+          <h3>Karthi Madesh</h3>
+          <h4>Admin</h4>
+        </div>
+        <div class="left-nav-bottom">
+          <button class="left-nav-bottom-button1">
+            <img src="images/shapka.svg" alt="" />
+            <h3>Students</h3>
+          </button>
+          <button class="left-nav-bottom-button2">
+            <h4>Logout</h4>
+            <img src="images/logout.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div class="header p-5">
+      <div class="header-first">
+        <div class="logo">
+          <div class="stick"></div>
+          <h2>CRUD OPERATIONS</h2>
+        </div>
+      </div>
+      <div class="header-second">
+        <button>
+          <img src="images/strelka.svg" alt="" />
+        </button>
+        <div class="header-second-right">
+          <form action="" class="formik">
+            <div class="formSearch">
+              <input
+                class="searchInput"
+                type="search"
+                placeholder="Search..."
+              />
+              <a href="#" class="searchBtn">
+                <img src="images/search.svg" alt="" />
+              </a>
+            </div>
+          </form>
+          <button>
+            <img src="images/kalokolchik.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="main-top">
+      <h2>Students List</h2>
+      <div class="main-top-right">
+        <button>
+          <img src="images/sort.svg" alt="" />
+        </button>
+        <button class="add-button main-top-right-button2">
+          ADD NEW STUDENT
+        </button>
+      </div>
+    </div>
+    <table class="m-auto">
+      <thead>
+        <tr class="tr-first">
+          <th class="bg-slate w-[250px] p-3">Name</th>
+          <th class="bg-slate w-[250px] p-3">Email</th>
+          <th class="bg-slate w-[250px] p-3">Phone</th>
+          <th class="bg-slate w-[250px] p-3">Enroll Number</th>
+          <th class="bg-slate w-[250px] p-3">Date admission</th>
+        </tr>
+      </thead>
+      <tbody class="tbody"></tbody>
+    </table>
+
+    <div id="modal-wrapper" class="modal-wrapper">
+      <div class="modal"></div>
+    </div>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            coolors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
